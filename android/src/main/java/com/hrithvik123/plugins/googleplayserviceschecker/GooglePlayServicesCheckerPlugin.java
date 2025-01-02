@@ -9,14 +9,20 @@ import com.getcapacitor.annotation.CapacitorPlugin;
 @CapacitorPlugin(name = "GooglePlayServicesChecker")
 public class GooglePlayServicesCheckerPlugin extends Plugin {
 
-    private GooglePlayServicesChecker implementation = new GooglePlayServicesChecker();
+    private GooglePlayServicesChecker implementation;
+
+    @Override
+    public void load() {
+        implementation = new GooglePlayServicesChecker(getActivity());
+    }
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+    public void isGooglePlayServicesAvailable(PluginCall call) {
+        try {
+            boolean isAvailable = implementation.isGooglePlayServicesAvailable();
+            call.resolve(new JSObject().put("available", isAvailable));
+        } catch (Exception exception) {
+            call.reject(exception.getLocalizedMessage());
+        }
     }
 }
