@@ -5,7 +5,7 @@ Check whether android device running Capacitor app supports Google Play Services
 ## Install
 
 ```bash
-npm install capacitor-google-play-services-checker
+npm install @hrithvik123/capacitor-google-play-services-checker
 npx cap sync
 ```
 
@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`isGooglePlayServicesAvailable()`](#isgoogleplayservicesavailable)
+- [`isGooglePlayServicesAvailable()`](#isgoogleplayservicesavailable)
 
 </docgen-index>
 
@@ -26,11 +26,10 @@ npx cap sync
 isGooglePlayServicesAvailable() => Promise<{ available: boolean; }>
 ```
 
-*
-Check if Google Play Services is available on the device
+- Check if Google Play Services is available on the device
 
-**Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
+  **Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
 
---------------------
+  ***
 
 </docgen-api>
