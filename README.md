@@ -26,6 +26,9 @@ npx cap sync
 isGooglePlayServicesAvailable() => Promise<{ available: boolean; }>
 ```
 
+*
+Check if Google Play Services is available on the device
+
 **Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
 
 --------------------
