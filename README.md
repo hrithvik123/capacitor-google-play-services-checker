@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-- [`isGooglePlayServicesAvailable()`](#isgoogleplayservicesavailable)
+* [`isGooglePlayServicesAvailable()`](#isgoogleplayservicesavailable)
 
 </docgen-index>
 
@@ -26,10 +26,11 @@ npx cap sync
 isGooglePlayServicesAvailable() => Promise<{ available: boolean; }>
 ```
 
-- Check if Google Play Services is available on the device
+*
+Check if Google Play Services is available on the device
 
-  **Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
+**Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
 
-  ***
+--------------------
 
 </docgen-api>
