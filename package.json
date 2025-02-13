@@ -1,6 +1,6 @@
 {
   "name": "@hrithvik123/capacitor-google-play-services-checker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Check whether android device running Capacitor app supports Google Play Services.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
